@@ -5,15 +5,15 @@
 > 常用方法:EXISTS key是否存在,EXPIRE key seconds设置过期时间</br>
 > pertsist key移除过期时间,保持持久 rename key newkey改名 type key查询值类型
 > 
-> congfig get requirepass查看密码 config set requirepass 950220设置密码<br>
-> 设置完密码后用AUTH 950220验证密码<br>
+> congfig get requirepass查看密码 config set requirepass xxxxxx设置密码<br>
+> 设置完密码后用AUTH xxxxxx验证密码<br>
 > 查询所有键 keys * 删除键DEL 名字<br>
 > 先用KEYS *查询全部键,或者用EXISTS 键名查询键是否存在,TYPE 键名 返回键的类型<br> 
 > EXPIRE 键名 秒数,TTL 键名返回剩余秒数加P为以毫秒为单位,PERSIST 键名移除过期时间
 
 ##五种数据结构
-+ ###String
->    最基本的数据类型,一个键最大能存储512MB      
++ ###String 
+>最基本的数据类型,一个键最大能存储512MB<br>      
 ``
 存数据 set name(键名) "noob(键值)"
 ``
